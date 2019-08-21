@@ -1,0 +1,21 @@
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px 0;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 937px) {
+  .catalog {
+    justify-content: space-around;
+  }
+}
+
+.catalog > .product > .cartProduct_count__simpleProduct {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
