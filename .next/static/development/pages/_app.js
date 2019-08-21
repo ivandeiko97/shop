@@ -11967,11 +11967,10 @@ var BUY_PRODUCT = 'BUY_PRODUCT';
 var DELETE_FROM_CART = 'DELETE_FROM_CART';
 var PLUS_COUNT_PRODUCT = 'PLUS_COUNT_PRODUCT';
 var MINUS_COUNT_PRODUCT = 'MINUS_COUNT_PRODUCT';
-function buyAction(id, count) {
+function buyAction(id) {
   return {
     type: BUY_PRODUCT,
-    id: id,
-    count: count
+    id: id
   };
 }
 ;
@@ -12057,12 +12056,12 @@ var initialState = {
       });
 
       if (product) {
-        product.count = product.count + action.count;
+        product.count = product.count + 1;
       } else {
         var newProduct = products.find(function (product) {
           return product.id === action.id;
         });
-        newProduct.count = action.count;
+        newProduct.count = 1;
         newCart.push(newProduct);
       }
 

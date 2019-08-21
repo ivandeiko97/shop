@@ -12,11 +12,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _product_Product__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../product/Product */ "./components/product/Product.jsx");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _Cart_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Cart.css */ "./components/cart/Cart.css");
+/* harmony import */ var _Cart_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Cart_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 var _jsxFileName = "O:\\MyProject\\myShop\\shop\\components\\cart\\Cart.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -31,7 +34,7 @@ function Cart(_ref) {
       className: "cartCatalog",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 10
       },
       __self: this
     }, cart.map(function (product) {
@@ -41,7 +44,7 @@ function Cart(_ref) {
         product: product,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 11
         },
         __self: this
       });
@@ -49,19 +52,19 @@ function Cart(_ref) {
       className: "cartCatalog_totalPrice",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 12
       },
       __self: this
     }, __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 13
       },
       __self: this
     }, "total:"), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13
+        lineNumber: 14
       },
       __self: this
     }, "".concat(total, "$"))));
@@ -71,26 +74,27 @@ function Cart(_ref) {
     className: "cartCatalog_empty",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, " you cart is empty :("), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
-  }, __jsx("a", {
+  }, " you cart is empty :("), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
+    },
+    __self: this
+  }, __jsx("a", {
+    className: "cartCatalog_buttonOrder",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
     },
     __self: this
   }, "Order products")));
@@ -106,7 +110,7 @@ function mapStateToProps(state) {
   };
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps, null)(Cart));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["connect"])(mapStateToProps, null)(Cart));
 
 /***/ }),
 
@@ -124,8 +128,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _Header_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header.css */ "./components/header/Header.css");
+/* harmony import */ var _Header_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Header_css__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "O:\\MyProject\\myShop\\shop\\components\\header\\Header.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -136,35 +143,35 @@ function Header(_ref) {
     className: "header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, __jsx("div", {
     className: "header_wrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, __jsx("nav", {
     className: "navigation",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, __jsx("ul", {
     className: "navigation_list",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, __jsx("li", {
     className: "navigation_catalog",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -172,20 +179,20 @@ function Header(_ref) {
     as: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, "Catalog"))), __jsx("li", {
     className: "navigation_cart",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -193,17 +200,30 @@ function Header(_ref) {
     as: "/cart",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, __jsx("a", {
     className: "navigation_cartLink",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
-  }, "s")))))));
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "cart"), __jsx("span", {
+    className: "navigation_count ".concat(count === 0 ? 'hidden' : ''),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, count))))))));
 }
 
 function mapStateToProps(state) {
@@ -232,7 +252,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/index.js");
-/* harmony import */ var _redux_action__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux/action */ "./redux/action.js");
+/* harmony import */ var _Product_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Product.css */ "./components/product/Product.css");
+/* harmony import */ var _Product_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Product_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _redux_action__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../redux/action */ "./redux/action.js");
 var _jsxFileName = "O:\\MyProject\\myShop\\shop\\components\\product\\Product.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -240,8 +262,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 function Product(props) {
-  // const [countProduct, setCount] = useState(1);
   var title = props.title,
       description = props.description,
       price = props.price,
@@ -382,45 +404,14 @@ function Product(props) {
       lineNumber: 64
     },
     __self: this
-  }, "".concat(price, "$"))), __jsx("div", {
-    className: "cartProduct_count cartProduct_count__simpleProduct",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: this
-  }, __jsx("button", {
-    // onClick={() => setCount(countProduct + 1)}
-    className: "cartProduct_button cartProduct_button__plus",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: this
-  }, "+"), __jsx("span", {
-    className: "cartProduct_displayCount",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }), __jsx("button", {
-    // onClick={() => setCount(countProduct - 1)}
-    // disabled={countProduct === 1}
-    className: "cartProduct_button cartProduct_button__minus",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    },
-    __self: this
-  }, "-")), __jsx("button", {
+  }, "".concat(price, "$"))), __jsx("button", {
     onClick: function onClick() {
-      return buy(id, 1);
+      return buy(id);
     },
     className: "product_buttonBuy",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 66
     },
     __self: this
   }, "buy"));
@@ -431,16 +422,16 @@ function Product(props) {
 function mapDispatchToProps(dispatch) {
   return {
     buy: function buy(id, count) {
-      return dispatch(Object(_redux_action__WEBPACK_IMPORTED_MODULE_3__["buyAction"])(id, count));
+      return dispatch(Object(_redux_action__WEBPACK_IMPORTED_MODULE_4__["buyAction"])(id));
     },
     deleteProduct: function deleteProduct(id) {
-      return dispatch(Object(_redux_action__WEBPACK_IMPORTED_MODULE_3__["deleteAction"])(id));
+      return dispatch(Object(_redux_action__WEBPACK_IMPORTED_MODULE_4__["deleteAction"])(id));
     },
     plusCount: function plusCount(id) {
-      return dispatch(Object(_redux_action__WEBPACK_IMPORTED_MODULE_3__["plusCountAction"])(id));
+      return dispatch(Object(_redux_action__WEBPACK_IMPORTED_MODULE_4__["plusCountAction"])(id));
     },
     minusCount: function minusCount(id) {
-      return dispatch(Object(_redux_action__WEBPACK_IMPORTED_MODULE_3__["minusCountAction"])(id));
+      return dispatch(Object(_redux_action__WEBPACK_IMPORTED_MODULE_4__["minusCountAction"])(id));
     }
   };
 }
@@ -13257,11 +13248,10 @@ var BUY_PRODUCT = 'BUY_PRODUCT';
 var DELETE_FROM_CART = 'DELETE_FROM_CART';
 var PLUS_COUNT_PRODUCT = 'PLUS_COUNT_PRODUCT';
 var MINUS_COUNT_PRODUCT = 'MINUS_COUNT_PRODUCT';
-function buyAction(id, count) {
+function buyAction(id) {
   return {
     type: BUY_PRODUCT,
-    id: id,
-    count: count
+    id: id
   };
 }
 ;
@@ -13310,5 +13300,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=cart.js.map

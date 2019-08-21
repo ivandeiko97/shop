@@ -1,6 +1,7 @@
 import React from 'react';
 import Product from '../product/Product';
 import { connect } from 'react-redux';
+import './Catalog.css';
 
 function Catalog({ products }) {
   return (

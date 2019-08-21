@@ -43,10 +43,10 @@ export default (state = initialState, action) => {
       let newCart = [...cart]
       let product = newCart.find(product => product.id === action.id);
       if (product) {
-        product.count = product.count + action.count;
+        product.count = product.count + 1;
       } else {
           let newProduct = products.find(product => product.id === action.id)
-          newProduct.count = action.count;
+          newProduct.count = 1;
           newCart.push(newProduct);
       }
       return {

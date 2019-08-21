@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import './Product.css';
 import {buyAction, deleteAction, plusCountAction, minusCountAction } from '../../redux/action';
 
 function Product(props) {
-  // const [countProduct, setCount] = useState(1);
 
   const {
     title, 
@@ -63,24 +63,8 @@ function Product(props) {
         <p>Price:</p>
         <span>{`${price}$`}</span>
       </div>
-      <div className="cartProduct_count cartProduct_count__simpleProduct">
-        <button
-          // onClick={() => setCount(countProduct + 1)}
-          className="cartProduct_button cartProduct_button__plus"
-        >
-          +
-        </button>
-        <span className="cartProduct_displayCount"></span>
-        <button
-          // onClick={() => setCount(countProduct - 1)}
-          // disabled={countProduct === 1}
-          className="cartProduct_button cartProduct_button__minus"
-        >
-          -
-        </button>
-      </div>
       <button 
-        onClick={() => buy(id, 1)}
+        onClick={() => buy(id)}
         className="product_buttonBuy"
       >
         buy
@@ -91,7 +75,7 @@ function Product(props) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    buy: (id, count) => dispatch(buyAction(id, count)),
+    buy: (id, count) => dispatch(buyAction(id)),
     deleteProduct: id => dispatch(deleteAction(id)),
     plusCount: (id) => dispatch(plusCountAction(id)),
     minusCount: (id) => dispatch(minusCountAction(id)),

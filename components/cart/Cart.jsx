@@ -1,5 +1,6 @@
 import React from 'react'
 import Product from '../product/Product';
+import './Cart.css';
 import Link from 'next/link';
 import { connect } from 'react-redux';
 
@@ -19,7 +20,7 @@ function Cart({ cart, total }) {
     <section className="cartCatalog_empty">
       <p> you cart is empty :(</p>
       <Link href="/">
-        <a>Order products</a>
+        <a className="cartCatalog_buttonOrder">Order products</a>
       </Link>
     </section>
   )

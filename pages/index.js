@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Header from '../components/header/Header';
 import Link from 'next/link';
 import Catalog from '../components/catalog/Catalog';
+import './style.css'
 
 class Index extends React.Component {
   static getInitialProps ({ reduxStore, req }) {
@@ -15,10 +16,6 @@ class Index extends React.Component {
     return (
     <Fragment>
       <Header />
-      <Link href="/cart" as={ process.env.BACKEND_URL + '/cart'}>
-                <a className="navigation_cartLink">s</a>
-                {/* <span className={`navigation_count ${count === 0 ? 'hidden' : ''}`} >{count}</span> */}
-     </Link>
       <main>
         <Catalog />
       </main>

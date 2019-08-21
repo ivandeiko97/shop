@@ -937,11 +937,10 @@ const BUY_PRODUCT = 'BUY_PRODUCT';
 const DELETE_FROM_CART = 'DELETE_FROM_CART';
 const PLUS_COUNT_PRODUCT = 'PLUS_COUNT_PRODUCT';
 const MINUS_COUNT_PRODUCT = 'MINUS_COUNT_PRODUCT';
-function buyAction(id, count) {
+function buyAction(id) {
   return {
     type: BUY_PRODUCT,
-    id,
-    count
+    id
   };
 }
 ;
@@ -1020,10 +1019,10 @@ const initialState = {
       let product = newCart.find(product => product.id === action.id);
 
       if (product) {
-        product.count = product.count + action.count;
+        product.count = product.count + 1;
       } else {
         let newProduct = products.find(product => product.id === action.id);
-        newProduct.count = action.count;
+        newProduct.count = 1;
         newCart.push(newProduct);
       }
 

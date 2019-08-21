@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { connect } from 'react-redux';
+import './Header.css';
 
 function Header({ count }) {
   return (
@@ -15,8 +16,10 @@ function Header({ count }) {
             </li>
             <li className="navigation_cart">
               <Link href="/cart" as={ process.env.BACKEND_URL + '/cart'}>
-                <a className="navigation_cartLink">s</a>
-                {/* <span className={`navigation_count ${count === 0 ? 'hidden' : ''}`} >{count}</span> */}
+                <a className="navigation_cartLink">
+                  <span>cart</span>
+                  <span className={`navigation_count ${count === 0 ? 'hidden' : ''}`} >{count}</span>
+                </a>
               </Link>
             </li>
           </ul>

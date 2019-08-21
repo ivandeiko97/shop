@@ -1,17 +1,117 @@
 {
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!pages/style.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!components/catalog/Catalog.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!components/cart/Cart.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!components/header/Header.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!components/product/Product.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
   "modules": {
-    "byIdentifier": {},
-    "usedIds": {}
+    "byIdentifier": {
+      "css node_modules/css-loader/index.js??ref--5-1!components/header/Header.css 0": 0,
+      "css node_modules/css-loader/index.js??ref--5-1!components/product/Product.css 0": 1,
+      "css node_modules/css-loader/index.js??ref--5-1!components/cart/Cart.css 0": 2,
+      "css node_modules/css-loader/index.js??ref--5-1!components/catalog/Catalog.css 0": 3,
+      "css node_modules/css-loader/index.js??ref--5-1!pages/style.css 0": 4,
+      "css node_modules/css-loader/index.js??ref--5-1!pages/style.css 1": 5
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5
+    }
   },
   "chunks": {
     "byName": {
       "commons": 0,
       "static/runtime/webpack.js": 1,
-      "static/runtime/main.js": 2,
-      "static\\wLhZQVxTTrr70y8Ac9eo7\\pages\\_app.js": 3,
-      "static\\wLhZQVxTTrr70y8Ac9eo7\\pages\\_error.js": 4,
-      "static\\wLhZQVxTTrr70y8Ac9eo7\\pages\\cart.js": 5,
-      "static\\wLhZQVxTTrr70y8Ac9eo7\\pages\\index.js": 6
+      "styles": 2,
+      "static/runtime/main.js": 3,
+      "static\\6uMKHWWV7pepuzZbMsigr\\pages\\_app.js": 4,
+      "static\\6uMKHWWV7pepuzZbMsigr\\pages\\_error.js": 5,
+      "static\\6uMKHWWV7pepuzZbMsigr\\pages\\cart.js": 6,
+      "static\\6uMKHWWV7pepuzZbMsigr\\pages\\index.js": 7
     },
     "bySource": {},
     "usedIds": [
@@ -21,7 +121,8 @@
       3,
       4,
       5,
-      6
+      6,
+      7
     ]
   }
 }
