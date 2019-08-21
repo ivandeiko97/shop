@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createStore } from 'redux';\nimport reducer from './redux/reducer';\nexport function initializeStore() {\n  return createStore(reducer);\n}","map":null,"metadata":{},"sourceType":"module"}

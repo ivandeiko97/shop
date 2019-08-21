@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {buyAction, deleteAction, plusCountAction, minusCountAction } from '../../redux/action';
 
 function Product(props) {
-  const [countProduct, setCount] = useState(1);
+  // const [countProduct, setCount] = useState(1);
 
   const {
     title, 
@@ -65,22 +65,22 @@ function Product(props) {
       </div>
       <div className="cartProduct_count cartProduct_count__simpleProduct">
         <button
-          onClick={() => setCount(countProduct + 1)}
+          // onClick={() => setCount(countProduct + 1)}
           className="cartProduct_button cartProduct_button__plus"
         >
           +
         </button>
-        <span className="cartProduct_displayCount">{countProduct}</span>
+        <span className="cartProduct_displayCount"></span>
         <button
-          onClick={() => setCount(countProduct - 1)}
-          disabled={countProduct === 1}
+          // onClick={() => setCount(countProduct - 1)}
+          // disabled={countProduct === 1}
           className="cartProduct_button cartProduct_button__minus"
         >
           -
         </button>
       </div>
       <button 
-        onClick={() => buy(id, countProduct)}
+        onClick={() => buy(id, 1)}
         className="product_buttonBuy"
       >
         buy

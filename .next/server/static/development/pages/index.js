@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _product_Product__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../product/Product */ "./components/product/Product.jsx");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "O:\\MyProject\\myShop\\with-redux-app\\components\\catalog\\Catalog.jsx";
+var _jsxFileName = "O:\\MyProject\\myShop\\shop\\components\\catalog\\Catalog.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -164,7 +164,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "O:\\MyProject\\myShop\\with-redux-app\\components\\header\\Header.jsx";
+var _jsxFileName = "O:\\MyProject\\myShop\\shop\\components\\header\\Header.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -210,7 +210,7 @@ function Header({
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
-    as: process.env.BACKEND_URL + '/',
+    as: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -231,7 +231,7 @@ function Header({
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/cart",
-    as: process.env.BACKEND_URL + '/cart',
+    as: "/cart",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -274,7 +274,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ "redux");
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _redux_action__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux/action */ "./redux/action.js");
-var _jsxFileName = "O:\\MyProject\\myShop\\with-redux-app\\components\\product\\Product.jsx";
+var _jsxFileName = "O:\\MyProject\\myShop\\shop\\components\\product\\Product.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -282,10 +282,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function Product(props) {
-  const {
-    0: countProduct,
-    1: setCount
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(1);
+  // const [countProduct, setCount] = useState(1);
   const {
     title,
     description,
@@ -430,7 +427,7 @@ function Product(props) {
     },
     __self: this
   }, __jsx("button", {
-    onClick: () => setCount(countProduct + 1),
+    // onClick={() => setCount(countProduct + 1)}
     className: "cartProduct_button cartProduct_button__plus",
     __source: {
       fileName: _jsxFileName,
@@ -444,9 +441,9 @@ function Product(props) {
       lineNumber: 73
     },
     __self: this
-  }, countProduct), __jsx("button", {
-    onClick: () => setCount(countProduct - 1),
-    disabled: countProduct === 1,
+  }), __jsx("button", {
+    // onClick={() => setCount(countProduct - 1)}
+    // disabled={countProduct === 1}
     className: "cartProduct_button cartProduct_button__minus",
     __source: {
       fileName: _jsxFileName,
@@ -454,7 +451,7 @@ function Product(props) {
     },
     __self: this
   }, "-")), __jsx("button", {
-    onClick: () => buy(id, countProduct),
+    onClick: () => buy(id, 1),
     className: "product_buttonBuy",
     __source: {
       fileName: _jsxFileName,
@@ -1176,7 +1173,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_catalog_Catalog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/catalog/Catalog */ "./components/catalog/Catalog.jsx");
-var _jsxFileName = "O:\\MyProject\\myShop\\with-redux-app\\pages\\index.js";
+var _jsxFileName = "O:\\MyProject\\myShop\\shop\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1209,7 +1206,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this
     }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
       href: "/cart",
-      as: process.env.BACKEND_URL + '/cart',
+      as: "/cart",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 18
@@ -1301,7 +1298,7 @@ function minusCountAction(id) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! O:\MyProject\myShop\with-redux-app\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! O:\MyProject\myShop\shop\pages\index.js */"./pages/index.js");
 
 
 /***/ }),
